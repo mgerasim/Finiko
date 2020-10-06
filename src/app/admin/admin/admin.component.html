@@ -1,0 +1,14 @@
+<ng-container *ngIf="finiko">
+  <p>
+    <span>Главный заголовок приолжения: </span>
+    <input type="text" [(ngModel)]="finiko.title">
+  </p>
+  <p>
+    <span>Описание приложения: </span>
+    <textarea [(ngModel)]="finiko.description">{{finiko.description}}</textarea>
+  </p>
+  <p>
+    <button (click)="save()">Сохранить</button>
+  </p>
+</ng-container>
+

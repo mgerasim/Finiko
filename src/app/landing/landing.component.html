@@ -1,0 +1,133 @@
+<div *ngIf="finiko" class="wrapper">
+  <header class="header" data-controller="header">
+    <div class="container">
+      <div class="flex0 flex-center-vert flex-space-between">
+        <a class="header__logo" href="#"><img src="https://thefiniko.com/assets/landing/img/logo.svg" alt=""></a>
+        <div style="z-index: 1;">
+          <!-- <button class="cpointer" onclick="return window.lang.select('ru')">Ru</button>
+          <button class="cpointer" onclick="return window.lang.select('en')">En</button> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-screen"><img class="main-screen__bg" src="https://thefiniko.com/assets/landing/img/bg-1.svg" alt=""><img class="main-screen__bg2" src="https://thefiniko.com/assets/landing/img/bg-2.svg" alt=""><img class="main-screen__bg3" src="https://thefiniko.com/assets/landing/img/bg-3.svg" alt="">
+    <div class="main-screen__container">
+      <div class="main-screen__caption">
+        <div class="main-screen__title">
+          <span data-lang="ru">{{ finiko.title }}</span>
+        </div>
+        <div class="main-screen__sub">
+          <span data-lang="ru">{{ finiko.description }}</span>
+          <span data-lang="en">The system works on the predicted risks principle, which are managed by statistics of decentralized products.</span>
+        </div>
+      </div>
+      <a class="main-screen__circle js-circle-link" href="/login/">
+        <div class="main-screen__circle-animate"></div>
+        <div class="main-screen__circle-caption">
+          <div class="main-screen__circle-title">
+            <span data-lang="ru">Личный кабинет</span>
+            <span data-lang="en">Personal account</span>
+          </div>
+          <div class="main-screen__circle-sub">FINIKO</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="main-form" style="display: none;">
+    <div class="container">
+      <div class="main-form__left">
+        <div class="main-form__title">Оставьте заявку</div>
+        <div class="main-form__descr">Она работает по принципу прогнозируемых рисков, которые управляются
+          статистикой децентрализованных продуктов.
+        </div>
+      </div>
+      <div class="main-form__right">
+        <form action="#" data-action="https://thefiniko.com/assets/landing/mail.php">
+          <div class="main-form__inputrow">
+            <div class="main-form__inputcol">
+              <div class="main-form__label">Имя</div>
+              <input class="input" type="text" required="" name="name">
+            </div>
+            <div class="main-form__inputcol">
+              <div class="main-form__label">Телефон для связи</div>
+              <input class="input" type="text" required="" name="phone">
+            </div>
+          </div>
+          <div class="main-form__inputbox">
+            <div class="main-form__label">Вопрос</div>
+            <input class="input" type="text" required="" name="question">
+          </div>
+          <div class="js-output" style="margin-bottom: 15px;"></div>
+          <div class="main-form__btnbox">
+            <div class="main-form__hint">Нажимая «отправить», вы соглашаетесь с <a href="policy.pdf">политикой конфиденциальности</a></div>
+            <button class="btn js-submit" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="main-form__contacts main-form__contacts--mob">
+      <div class="container"><a class="main-form__contacts-link" href="mailto:finikohelp@mail.ru">finikohelp@mail.ru</a>
+        <div class="main-form__contacts-social"><a href="https://www.instagram.com/finiko.ru/" target="_blank">
+          <svg class="icon-svg  icon-instagram">
+            <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#instagram"></use>
+          </svg>
+        </a><a href="https://vk.com/publicfiniko" target="_blank">
+          <svg class="icon-svg  icon-vk">
+            <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#vk"></use>
+          </svg>
+        </a><a href="https://t.me/Finikoinfo" target="_blank">
+          <svg class="icon-svg  icon-teleg">
+            <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#teleg"></use>
+          </svg>
+        </a></div>
+        <a class="main-form__contacts-link" href="https://vk.com/public184656888" target="_blank">
+          <span data-lang="ru">Техническая поддержка</span>
+          <span data-lang="en">Technical support</span>
+        </a>
+      </div>
+    </div>
+    <div class="main-form__bottom">
+      <div class="container">
+        <div class="main-form__copyright"><a href="https://markweber.ru/" target="_blank"><img src="https://thefiniko.com/assets/landing/img/markweber_logo_white.png" alt=""></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="main-form__contacts">
+    <div class="container mb-4">
+
+      <div class="flex0 flex-space-between flex-wrap w-100">
+        <div class="flex0 flex-wrap pr-2 flex-center-vert mt-2" style="margin-top: 1.5rem;">
+          <a class="main-form__contacts-link" href="mailto:finikohelp@thefiniko.com">finikohelp@thefiniko.com</a>
+          <div class="main-form__contacts-social"><a href="https://www.instagram.com/finiko.ru/" target="_blank">
+            <svg class="icon-svg  icon-instagram">
+              <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#instagram"></use>
+            </svg>
+          </a><a href="https://vk.com/publicfiniko" target="_blank">
+            <svg class="icon-svg  icon-vk">
+              <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#vk"></use>
+            </svg>
+          </a><a href="https://t.me/Finikoinfo" target="_blank">
+            <svg class="icon-svg  icon-teleg">
+              <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#teleg"></use>
+            </svg>
+          </a></div>
+          <a class="main-form__contacts-link" href="https://vk.com/public184656888" target="_blank">
+            <span data-lang="ru">Техническая поддержка</span>
+            <span data-lang="en">Technical support</span>
+          </a>
+        </div>
+        <div class="align-right">
+          <a class="main-form__contacts-link" href="/pd_protection.pdf" download="" target="_blank"><img class="mr-1" src="https://thefiniko.com/assets/landing/img/file.png" align="absmiddle" style="height: 16px; opacity: .35;">
+            <span data-lang="ru">Положение о защите персональных данных пользователей</span>
+            <span data-lang="en">The regulations on the protection of personal data of the user</span>
+          </a>
+          <br><a class="main-form__contacts-link" href="/pd_trans.pdf" download="" target="_blank"><img class="mr-1" src="https://thefiniko.com/assets/landing/img/file.png" align="absmiddle" style="height: 16px; opacity: .35;">
+          <span data-lang="ru">Согласие на трансграничную передачу данных</span>
+          <span data-lang="en">Consent to TRANS-border transmission of personal data</span>
+        </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

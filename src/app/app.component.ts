@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {FinikoService} from "./@core/services/finiko.service";
+import {take} from "rxjs/operators";
+import {Finiko} from "./@core/models/Finiko";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Finiko';
+
+  constructor() {
+  }
+
+
 }

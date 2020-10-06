@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "finiko",
+    "public": "dist/Finiko",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
