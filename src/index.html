@@ -3,11 +3,96 @@
 <head>
   <meta charset="utf-8">
   <title>Finiko</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta content="" name="author">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://thefiniko.com/assets/landing/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://thefiniko.com/assets/landing/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://thefiniko.com/assets/landing/img/favicon-16x16.png">
+  <link rel="manifest" href="https://thefiniko.com/assets/landing/site.webmanifest">
+  <link rel="mask-icon" href="https://thefiniko.com/assets/landing/img/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://thefiniko.com/assets/landing/css/foundation.min.css">
+  <link rel="stylesheet" href="https://thefiniko.com/assets/landing/css/app.min.css">
+  <!--[if lt IE 10]>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <style>
+    @font-face {
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-style: normal;
+
+      font-display: swap;
+      src: url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Regular.eot');
+      src: url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Regular.woff') format('woff'), url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Regular.ttf') format('truetype'), url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Regular.svg#Roboto') format('svg');
+    }
+    @font-face {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-style: normal;
+
+      font-display: swap;
+      src: url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Light.eot');
+      src: url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Light.woff') format('woff'), url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Light.ttf') format('truetype'), url('https://thefiniko.com/assets/landing/fonts/roboto/Roboto-Light.svg#Roboto') format('svg');
+    }
+    @font-face {
+      font-family: 'DINPro';
+      font-weight: 500;
+      font-style: normal;
+
+      font-display: swap;
+      src: url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Medium.eot');
+      src: url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Medium.eot?#iefix') format('embedded-opentype'), url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Medium.woff') format('woff'), url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Medium.ttf') format('truetype'), url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Medium.svg#DINPro') format('svg');
+    }
+    @font-face {
+      font-family: 'DINPro';
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+      src: url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Light.eot');
+      src: url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Light.eot?#iefix') format('embedded-opentype'), url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Light.woff') format('woff'), url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Light.ttf') format('truetype'), url('https://thefiniko.com/assets/landing/fonts/dinpro/DINPro-Light.svg#DINPro') format('svg');
+    }
+    .flex0 {display: flex;}
+    .flex-wrap {flex-wrap: wrap;}
+    .flex-center {align-items: center; justify-content: center;}
+    .flex-center-vert {align-items: center;}
+    .flex-space-between {justify-content: space-between;}
+    .mb-4 {margin-bottom: 2rem;}
+    .pr-2 {padding-right: 1rem;}
+    .mr-1 {margin-right: .5rem;}
+    .mr-2 {margin-right: 1rem;}
+    .align-right {text-align: right;}
+    .w-100 {width: 100%;}
+    .header {z-index: 4;}
+    .cpointer {cursor: pointer;}
+    button {
+      padding: .5em;
+    }
+    body [data-lang] {display: none;}
+    body[data-lang="ru"] [data-lang="ru"] {display: inline;}
+    body[data-lang="en"] [data-lang="en"] {display: inline;}
+  </style>
+  <script>
+    /*window.lang = {
+        select: function(code) {
+            localStorage.setItem('landing_lang', code);
+            $('body').attr('data-lang', code);
+            console.log(code);
+        }
+    };*/
+  </script>
 </head>
-<body>
+<body data-lang="ru">
   <app-root></app-root>
+
+  <script data-cfasync="false" src="https://thefiniko.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://thefiniko.com/assets/landing/js/foundation.min.js" defer></script>
+  <script src="https://thefiniko.com/assets/landing/js/app.js" defer></script>
+
 </body>
 </html>

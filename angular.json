@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Finiko"
+    }
+  },
+  "defaultProject": "Finiko",
+  "cli": {
+    "analytics": "c0055911-5be9-4ca0-84ad-9052a10c154d"
+  }
 }
