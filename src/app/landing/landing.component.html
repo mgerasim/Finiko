@@ -2,7 +2,7 @@
   <header class="header" data-controller="header">
     <div class="container">
       <div class="flex0 flex-center-vert flex-space-between">
-        <a class="header__logo" href="#"><img src="https://thefiniko.com/assets/landing/img/logo.svg" alt=""></a>
+        <a class="header__logo" href="#"><img [src]="finiko.logoLink" alt=""></a>
         <div style="z-index: 1;">
           <!-- <button class="cpointer" onclick="return window.lang.select('ru')">Ru</button>
           <button class="cpointer" onclick="return window.lang.select('en')">En</button> -->
@@ -25,10 +25,10 @@
         <div class="main-screen__circle-animate"></div>
         <div class="main-screen__circle-caption">
           <div class="main-screen__circle-title">
-            <span data-lang="ru">Личный кабинет</span>
+            <span data-lang="ru">{{ finiko.titleCircle }}</span>
             <span data-lang="en">Personal account</span>
           </div>
-          <div class="main-screen__circle-sub">FINIKO</div>
+          <div class="main-screen__circle-sub">{{ finiko.titleCircleSub }}</div>
         </div>
       </a>
     </div>
@@ -66,21 +66,13 @@
       </div>
     </div>
     <div class="main-form__contacts main-form__contacts--mob">
-      <div class="container"><a class="main-form__contacts-link" href="mailto:finikohelp@mail.ru">finikohelp@mail.ru</a>
-        <div class="main-form__contacts-social"><a href="https://www.instagram.com/finiko.ru/" target="_blank">
-          <svg class="icon-svg  icon-instagram">
-            <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#instagram"></use>
-          </svg>
-        </a><a href="https://vk.com/publicfiniko" target="_blank">
-          <svg class="icon-svg  icon-vk">
-            <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#vk"></use>
-          </svg>
-        </a><a href="https://t.me/Finikoinfo" target="_blank">
-          <svg class="icon-svg  icon-teleg">
-            <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#teleg"></use>
+      <div class="container"><a class="main-form__contacts-link" href="mailto:{{finiko.email}}">{{ finiko.email }}</a>
+        <div class="main-form__contacts-social"><a [href]="finiko.telegramLink" target="_blank">
+          <svg class="icon-svg  icon-teleg" xmlns="http://www.w3.org/2000/svg">
+            <image class="icon-svg  icon-teleg" xlink:href="/assets/telegram.svg" />
           </svg>
         </a></div>
-        <a class="main-form__contacts-link" href="https://vk.com/public184656888" target="_blank">
+        <a class="main-form__contacts-link" [href]="finiko.techSupportLink" target="_blank">
           <span data-lang="ru">Техническая поддержка</span>
           <span data-lang="en">Technical support</span>
         </a>
@@ -97,21 +89,13 @@
 
       <div class="flex0 flex-space-between flex-wrap w-100">
         <div class="flex0 flex-wrap pr-2 flex-center-vert mt-2" style="margin-top: 1.5rem;">
-          <a class="main-form__contacts-link" href="mailto:finikohelp@thefiniko.com">finikohelp@thefiniko.com</a>
-          <div class="main-form__contacts-social"><a href="https://www.instagram.com/finiko.ru/" target="_blank">
-            <svg class="icon-svg  icon-instagram">
-              <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#instagram"></use>
-            </svg>
-          </a><a href="https://vk.com/publicfiniko" target="_blank">
-            <svg class="icon-svg  icon-vk">
-              <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#vk"></use>
-            </svg>
-          </a><a href="https://t.me/Finikoinfo" target="_blank">
-            <svg class="icon-svg  icon-teleg">
-              <use xlink:href="https://thefiniko.com/assets/landing/img/sprite.svg#teleg"></use>
+          <a class="main-form__contacts-link" href="mailto:{{ finiko.email }}">{{ finiko.email }}</a>
+          <div class="main-form__contacts-social"><a [href]="finiko.telegramLink" target="_blank">
+            <svg class="icon-svg  icon-teleg" xmlns="http://www.w3.org/2000/svg">
+              <image class="icon-svg  icon-teleg" xlink:href="/assets/telegram.svg" />
             </svg>
           </a></div>
-          <a class="main-form__contacts-link" href="https://vk.com/public184656888" target="_blank">
+          <a class="main-form__contacts-link" [href]="finiko.techSupportLink" target="_blank">
             <span data-lang="ru">Техническая поддержка</span>
             <span data-lang="en">Technical support</span>
           </a>

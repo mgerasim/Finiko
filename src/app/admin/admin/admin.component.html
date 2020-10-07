@@ -1,15 +1,39 @@
 <ng-container *ngIf="finiko">
   <p>
-    <span>Главный заголовок приолжения: </span>
+    <span>Главный заголовок приложения: </span>
     <input type="text" [(ngModel)]="finiko.title"/>
+  </p>
+  <p>
+    <span>Заголовок кнопки входа: </span>
+    <input type="text" [(ngModel)]="finiko.titleCircle"/>
+  </p>
+  <p>
+    <span>Подзаголовок кнопки входа: </span>
+    <input type="text" [(ngModel)]="finiko.titleCircleSub"/>
   </p>
   <p>
     <span>Описание приложения: </span>
     <textarea [(ngModel)]="finiko.description">{{finiko.description}}</textarea>
   </p>
   <p>
-    <span>Ссылка на личный кабинет:</span>
+    <span>Ссылка логотипа: </span>
+    <input type="text" [(ngModel)]="finiko.logoLink"/>
+  </p>
+  <p>
+    <span>Ссылка на личный кабинет: </span>
     <input type="text" [(ngModel)]="finiko.personalLink"/>
+  </p>
+  <p>
+    <span>Электронный ящик: </span>
+    <input type="text" [(ngModel)]="finiko.email"/>
+  </p>
+  <p>
+    <span>Ссылка технической поддержки: </span>
+    <input type="text" [(ngModel)]="finiko.techSupportLink"/>
+  </p>
+  <p>
+    <span>Ссылка telegram: </span>
+    <input type="text" [(ngModel)]="finiko.telegramLink"/>
   </p>
   <p>
     <button (click)="save()">Сохранить</button>
