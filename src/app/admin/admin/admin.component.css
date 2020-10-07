@@ -1,0 +1,16 @@
+:host {
+
+}
+input {
+  width: 100%;
+}
+
+p {
+  padding: 10px;
+}
+
+.admin {
+  overflow-x: scroll; /* прокрутка по горизонтали */
+  overflow-y: scroll; /* прокрутка по вертикали */
+  height: 700px;
+}

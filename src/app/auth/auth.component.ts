@@ -25,7 +25,7 @@ export class AuthComponent implements OnInit {
     localStorage.setItem('auth', md5.appendStr(this.password).end().toString());
     if (!this.authGuard.canActivate()) {
     }
-    this.router.navigate(['/']).then();
+    this.router.navigate(['admin']).then();
   }
 
 }

@@ -9,4 +9,8 @@ export class Finiko {
   titleCircle: string;
   titleCircleSub: string;
   logoLink: string;
+  docProtectionLink: string;
+  docTransLink: string;
+  docProtectionTitle: string;
+  docTransTitle: string;
 }

@@ -1,42 +1,66 @@
-<ng-container *ngIf="finiko">
-  <p>
-    <span>Главный заголовок приложения: </span>
-    <input type="text" [(ngModel)]="finiko.title"/>
-  </p>
-  <p>
-    <span>Заголовок кнопки входа: </span>
-    <input type="text" [(ngModel)]="finiko.titleCircle"/>
-  </p>
-  <p>
-    <span>Подзаголовок кнопки входа: </span>
-    <input type="text" [(ngModel)]="finiko.titleCircleSub"/>
-  </p>
-  <p>
-    <span>Описание приложения: </span>
-    <textarea [(ngModel)]="finiko.description">{{finiko.description}}</textarea>
-  </p>
-  <p>
-    <span>Ссылка логотипа: </span>
-    <input type="text" [(ngModel)]="finiko.logoLink"/>
-  </p>
-  <p>
-    <span>Ссылка на личный кабинет: </span>
-    <input type="text" [(ngModel)]="finiko.personalLink"/>
-  </p>
-  <p>
-    <span>Электронный ящик: </span>
-    <input type="text" [(ngModel)]="finiko.email"/>
-  </p>
-  <p>
-    <span>Ссылка технической поддержки: </span>
-    <input type="text" [(ngModel)]="finiko.techSupportLink"/>
-  </p>
-  <p>
-    <span>Ссылка telegram: </span>
-    <input type="text" [(ngModel)]="finiko.telegramLink"/>
-  </p>
-  <p>
-    <button (click)="save()">Сохранить</button>
-  </p>
-</ng-container>
+<div class="admin">
 
+  <ng-container *ngIf="finiko">
+    <p>
+      <span>Главный заголовок приложения: </span>
+      <input type="text" [(ngModel)]="finiko.title"/>
+    </p>
+    <p>
+      <span>Заголовок кнопки входа: </span>
+      <input type="text" [(ngModel)]="finiko.titleCircle"/>
+    </p>
+    <p>
+      <span>Подзаголовок кнопки входа: </span>
+      <input type="text" [(ngModel)]="finiko.titleCircleSub"/>
+    </p>
+    <p>
+      <span>Описание приложения: </span>
+      <textarea [(ngModel)]="finiko.description">{{finiko.description}}</textarea>
+    </p>
+    <p>
+      <span>Ссылка логотипа: </span>
+      <input type="text" [(ngModel)]="finiko.logoLink"/>
+    </p>
+    <p>
+      <span>Ссылка на личный кабинет: </span>
+      <input type="text" [(ngModel)]="finiko.personalLink"/>
+    </p>
+    <p>
+      <span>Электронный ящик: </span>
+      <input type="text" [(ngModel)]="finiko.email"/>
+    </p>
+    <p>
+      <span>Ссылка технической поддержки: </span>
+      <input type="text" [(ngModel)]="finiko.techSupportLink"/>
+    </p>
+    <p>
+      <span>Ссылка telegram: </span>
+      <input type="text" [(ngModel)]="finiko.telegramLink"/>
+    </p>
+
+    <p>
+      <span>Положение о защите персональных данных пользователей (наименование): </span>
+      <input type="text" [(ngModel)]="finiko.docProtectionTitle"/>
+    </p>
+
+    <p>
+      <span>Положение о защите персональных данных пользователей (ссылка): </span>
+      <input type="text" [(ngModel)]="finiko.docProtectionLink"/>
+    </p>
+
+    <p>
+      <span>Согласие на трансграничную передачу данных (наименование): </span>
+      <input type="text" [(ngModel)]="finiko.docTransTitle"/>
+    </p>
+
+    <p>
+      <span>Согласие на трансграничную передачу данных (ссылка): </span>
+      <input type="text" [(ngModel)]="finiko.docTransLink"/>
+    </p>
+    <p>
+      <button (click)="save()">Сохранить</button>
+    </p>
+  </ng-container>
+
+
+</div>
