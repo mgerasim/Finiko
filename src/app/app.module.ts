@@ -9,6 +9,8 @@ import {RouterModule, Routes} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import { LandingComponent } from './landing/landing.component';
 import {CommonModule} from "@angular/common";
+import { AuthComponent } from './auth/auth.component';
+import {FormsModule} from "@angular/forms";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAuv-nYgaJ9tsHouMm0JOFkFAK-QIaxexo",
@@ -25,13 +27,14 @@ const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent
+    LandingComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(firebaseConfig), AngularFirestoreModule, AngularFireAuthModule,
+    AngularFireModule.initializeApp(firebaseConfig), AngularFirestoreModule, AngularFireAuthModule, FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
