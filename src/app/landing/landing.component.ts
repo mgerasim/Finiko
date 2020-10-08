@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Finiko} from "../@core/models/Finiko";
 import {FinikoService} from "../@core/services/finiko.service";
 import {take} from "rxjs/operators";
+import {Observable, Subscription} from "rxjs";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-landing',
@@ -10,11 +12,21 @@ import {take} from "rxjs/operators";
 })
 export class LandingComponent implements OnInit {
 
+  @HostListener('document:keypress', ['$event'])
+  public handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === 'A') {
+      this.router.navigate(['admin']).then();
+    }
+  };
+
   finiko: Finiko;
 
-  constructor(private finikoService: FinikoService) { }
+  constructor(
+    public router: Router,
+    private finikoService: FinikoService) { }
 
   ngOnInit(): void {
+
     this.finikoService.get('lzyWzAamqYJdLrhgncDg').pipe(
       take(1)
     ).subscribe(finiko => {
